@@ -11,9 +11,10 @@
             navigator.geolocation.getCurrentPosition(function(position) {
                 var latitude = position.coords.latitude;
                 var longitude = position.coords.longitude;
-                // Aquí puedes enviar estos datos a tu servidor para procesamiento
+                // Aquí puedes enviar estos datos a tu servidor para procesamient0
+ 
                 console.log("Latitud: " + latitude + ", Longitud: " + longitude);
-            });
+            }); 
         } else {
             console.log("Geolocalización no soportada por el navegador.");
         }
