@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geolocalización por WhatsApp</title>
+</head>
+<body>
+    <h1>Geolocalización por WhatsApp</h1>
+    <p>Esta página web intenta obtener la geolocalización del usuario cuando accede a ella.</p>
+    <script>
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                // Aquí puedes enviar estos datos a tu servidor para procesamiento
+                console.log("Latitud: " + latitude + ", Longitud: " + longitude);
+            });
+        } else {
+            console.log("Geolocalización no soportada por el navegador.");
+        }
+    </script>
+</body>
+</html>
